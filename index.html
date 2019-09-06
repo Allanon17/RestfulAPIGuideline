@@ -1367,13 +1367,14 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 </li>
 <li><a href="#deprecation">7. Deprecation</a>
 <ul class="sectlevel2">
-<li><a href="#185"><span class="must-keyword"><strong>Must</strong></span>: Obtain Approval of Clients</a></li>
-<li><a href="#186"><span class="must-keyword"><strong>Must</strong></span>: External Partners Must Agree on Deprecation Timespan</a></li>
+<li><a href="#185"><span class="must-keyword"><strong>Must</strong></span>: Provide Consumers with Appropriate Notice to Migrate</a></li>
+<li><a href="#186"><span class="must-keyword"><strong>Must</strong></span>: Work with the Architecture C4E and Legal in Cases of Security or Regulatory Issues</a></li>
 <li><a href="#187"><span class="must-keyword"><strong>Must</strong></span>: Reflect Deprecation in API Definition</a></li>
 <li><a href="#188"><span class="must-keyword"><strong>Must</strong></span>: Monitor Usage of Deprecated APIs</a></li>
 <li><a href="#189"><span class="should-keyword"><strong>Should</strong></span>: Add a Warning Header to Responses</a></li>
 <li><a href="#190"><span class="should-keyword"><strong>Should</strong></span>: Add Monitoring for Warning Header</a></li>
 <li><a href="#191"><span class="must-keyword"><strong>Must</strong></span>: Not Start Using Deprecated APIs</a></li>
+<li><a href="#192"><span class="must-keyword"><strong>Must</strong></span>: Be Moved to a Retired State once All Consumers are Off the Deprecated API</a></li>
 </ul>
 </li>
 <li><a href="#json-guidelines">8. JSON Guidelines</a>
@@ -2897,35 +2898,32 @@ necessary consumer changes are aligned and deprecated endpoints are not used
 before API changes are deployed.</p>
 </div>
 <div class="sect2">
-<h3 id="185"><a class="link" href="#185"><span class="must-keyword"><strong>Must</strong></span>: Obtain Approval of Clients</a></h3>
+<h3 id="185"><a class="link" href="#185"><span class="must-keyword"><strong>Must</strong></span>: Provide Consumers with Appropriate Notice to Migrate</a></h3>
 <div class="paragraph">
-<p>Before shutting down an API (or version of an API) the producer must
-make sure, that all clients have given their consent to shut down the
-endpoint. Producers should help consumers to migrate to a potential new
-endpoint (i.e. by providing a migration manual). After all clients are
-migrated, the producer may shut down the deprecated API.</p>
+<p>The deprecated API version MUST be in the DEPRECATED state for a minimum period
+of time to give client customers adequate notice to migrate. Deprecation of API
+versions with external clients SHOULD be considered on a case-by-case basis and
+may require additional deprecation time and/or constraints to minimize impact
+to the business.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="186"><a class="link" href="#186"><span class="must-keyword"><strong>Must</strong></span>: External Partners Must Agree on Deprecation Timespan</a></h3>
+<h3 id="186"><a class="link" href="#186"><span class="must-keyword"><strong>Must</strong></span>: Work with the Architecture C4E and Legal in Cases of Security or Regulatory Issues</a></h3>
 <div class="paragraph">
-<p>If the API is consumed by any external partner, the producer must define
-a reasonable timespan that the API will be maintained after the producer
-has announced deprecation. The external partner (client) must agree to
-this minimum after-deprecation-lifespan before he starts using the API.</p>
+<p>In the case of a security or regulatory issue where an API must be shut down.
+The producer must work with the Architecture C4E and Legal to determine
+appropriate steps</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="187"><a class="link" href="#187"><span class="must-keyword"><strong>Must</strong></span>: Reflect Deprecation in API Definition</a></h3>
 <div class="paragraph">
-<p>API deprecation must be part of the OpenAPI definition. If a method on a
-path, a whole path or even a whole API endpoint (multiple paths) should
-be deprecated, the producers must set <code>deprecated=true</code> on each method /
-path element that will be deprecated (OpenAPI 2.0 only allows you to
-define deprecation on this level). If deprecation should happen on a
-more fine grained level (i.e. query parameter, payload etc.), the
-producer should set <code>deprecated=true</code> on the affected method / path
-element and add further explanation to the <code>description</code> section.</p>
+<p>API deprecation must be part of the OpenAPI definition. Producers must set 
+<code>deprecated=true</code> on each method / path element that will be deprecated
+(OpenAPI 3.0 only allows you to define deprecation on this level or lower).
+If deprecated is set to true, the producer must describe what clients should
+use instead and when the API will be shut down in the description section of
+the API definition.</p>
 </div>
 <div class="paragraph">
 <p>If <code>deprecated</code> is set to <code>true</code>, the producer must describe what
@@ -2972,6 +2970,13 @@ an API will be deprecated in future.</p>
 <h3 id="191"><a class="link" href="#191"><span class="must-keyword"><strong>Must</strong></span>: Not Start Using Deprecated APIs</a></h3>
 <div class="paragraph">
 <p>Clients must not start using deprecated parts of an API.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="192"><a class="link" href="#192"><span class="must-keyword"><strong>Must</strong></span>: Be Moved to a Retired State once All Consumers are Off the Deprecated API</a></h3>
+<div class="paragraph">
+<p>Once all clients are off the deprecated API and any stated timelines have
+elapsed, the API must be moved to a state of requirement and be decommissioned.</p>
 </div>
 </div>
 </div>
