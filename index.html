@@ -1390,10 +1390,6 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#126"><span class="should-keyword"><strong>Should</strong></span>: Date property values should conform to RFC 3339</a></li>
 <li><a href="#127"><span class="may-keyword"><strong>May</strong></span>: Time durations and intervals could conform to ISO 8601</a></li>
 <li><a href="#128"><span class="may-keyword"><strong>May</strong></span>: Standards could be used for Language, Country and Currency</a></li>
-</ul>
-</li>
-<li><a href="#api-naming">9. API Naming</a>
-<ul class="sectlevel2">
 <li><a href="#223"><span class="must-keyword"><strong>Must</strong></span>/<span class="should-keyword"><strong>Should</strong></span>: Use Functional Naming Schema</a></li>
 <li><a href="#224"><span class="must-keyword"><strong>Must</strong></span>: Follow Naming Convention for Hostnames</a></li>
 <li><a href="#129"><span class="must-keyword"><strong>Must</strong></span>: Use lowercase separate words with hyphens for Path Segments</a></li>
@@ -1403,10 +1399,6 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#135"><span class="should-keyword"><strong>Should</strong></span>: Not Use /api as Base Path</a></li>
 <li><a href="#136"><span class="must-keyword"><strong>Must</strong></span>: Avoid Trailing Slashes</a></li>
 <li><a href="#137"><span class="must-keyword"><strong>Must</strong></span>: Stick to Conventional Query Parameters</a></li>
-</ul>
-</li>
-<li><a href="#resources">10. Resources</a>
-<ul class="sectlevel2">
 <li><a href="#138"><span class="must-keyword"><strong>Must</strong></span>: Avoid Actions — Think About Resources</a></li>
 <li><a href="#139"><span class="should-keyword"><strong>Should</strong></span>: Model complete business processes</a></li>
 <li><a href="#140"><span class="should-keyword"><strong>Should</strong></span>: Define <em>useful</em> resources</a></li>
@@ -1420,7 +1412,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#147"><span class="should-keyword"><strong>Should</strong></span>: Limit number of Sub-Resource Levels</a></li>
 </ul>
 </li>
-<li><a href="#http-requests">11. HTTP Requests</a>
+<li><a href="#http-requests">9. HTTP Requests</a>
 <ul class="sectlevel2">
 <li><a href="#148"><span class="must-keyword"><strong>Must</strong></span>: Use HTTP Methods Correctly</a></li>
 <li><a href="#149"><span class="must-keyword"><strong>Must</strong></span>: Fulfill Common Method Properties</a></li>
@@ -1430,7 +1422,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#226"><span class="must-keyword"><strong>Must</strong></span>: Document Implicit Filtering</a></li>
 </ul>
 </li>
-<li><a href="#http-status-codes-and-errors">12. HTTP Status Codes And Errors</a>
+<li><a href="#http-status-codes-and-errors">10. HTTP Status Codes And Errors</a>
 <ul class="sectlevel2">
 <li><a href="#151"><span class="must-keyword"><strong>Must</strong></span>: Specify Success and Error Responses</a></li>
 <li><a href="#150"><span class="must-keyword"><strong>Must</strong></span>: Use Standard HTTP Status Codes</a></li>
@@ -1441,7 +1433,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#177"><span class="must-keyword"><strong>Must</strong></span>: Do not expose Stack Traces</a></li>
 </ul>
 </li>
-<li><a href="#performance">13. Performance</a>
+<li><a href="#performance">11. Performance</a>
 <ul class="sectlevel2">
 <li><a href="#155"><span class="should-keyword"><strong>Should</strong></span>: Reduce Bandwidth Needs and Improve Responsiveness</a></li>
 <li><a href="#156"><span class="should-keyword"><strong>Should</strong></span>: Use gzip Compression</a></li>
@@ -1450,14 +1442,14 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#227"><span class="must-keyword"><strong>Must</strong></span>: Document Cachable <code>GET</code>, <code>HEAD</code>, and <code>POST</code> Endpoints</a></li>
 </ul>
 </li>
-<li><a href="#pagination">14. Pagination</a>
+<li><a href="#pagination">12. Pagination</a>
 <ul class="sectlevel2">
 <li><a href="#159"><span class="must-keyword"><strong>Must</strong></span>: Support Pagination</a></li>
 <li><a href="#160"><span class="should-keyword"><strong>Should</strong></span>: Prefer Cursor-Based Pagination, Avoid Offset-Based Pagination</a></li>
 <li><a href="#161"><span class="should-keyword"><strong>Should</strong></span>: Use Pagination Links Where Applicable</a></li>
 </ul>
 </li>
-<li><a href="#hypermedia">15. Hypermedia</a>
+<li><a href="#hypermedia">13. Hypermedia</a>
 <ul class="sectlevel2">
 <li><a href="#162"><span class="must-keyword"><strong>Must</strong></span>: Use REST Maturity Level 2</a></li>
 <li><a href="#163"><span class="may-keyword"><strong>May</strong></span>: Use REST Maturity Level 3 - HATEOAS</a></li>
@@ -1467,7 +1459,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#166"><span class="must-keyword"><strong>Must</strong></span>: Not Use Link Headers with JSON Entities</a></li>
 </ul>
 </li>
-<li><a href="#data-formats">16. Data Formats</a>
+<li><a href="#data-formats">14. Data Formats</a>
 <ul class="sectlevel2">
 <li><a href="#167"><span class="must-keyword"><strong>Must</strong></span>: Use JSON to Encode Structured Data</a></li>
 <li><a href="#168"><span class="may-keyword"><strong>May</strong></span>: Use non JSON Media Types for Binary Data or Alternative Content Representations</a></li>
@@ -1478,13 +1470,13 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#171"><span class="must-keyword"><strong>Must</strong></span>: Define Format for Type Number and Integer</a></li>
 </ul>
 </li>
-<li><a href="#common-data-types">17. Common Data Types</a>
+<li><a href="#common-data-types">15. Common Data Types</a>
 <ul class="sectlevel2">
 <li><a href="#173"><span class="must-keyword"><strong>Must</strong></span>: Use a Common Money Object</a></li>
 <li><a href="#174"><span class="must-keyword"><strong>Must</strong></span>: Use common field names and semantics</a></li>
 </ul>
 </li>
-<li><a href="#common-headers">18. Common Headers</a>
+<li><a href="#common-headers">16. Common Headers</a>
 <ul class="sectlevel2">
 <li><a href="#178"><span class="must-keyword"><strong>Must</strong></span>: Use <code>Content-*</code> Headers Correctly</a></li>
 <li><a href="#133"><span class="may-keyword"><strong>May</strong></span>: Use Standardized Headers</a></li>
@@ -1495,20 +1487,20 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#230"><span class="may-keyword"><strong>May</strong></span>: Consider to Support <code>Idempotency-Key</code> Header</a></li>
 </ul>
 </li>
-<li><a href="#proprietary-headers">19. Proprietary Headers</a>
+<li><a href="#proprietary-headers">17. Proprietary Headers</a>
 <ul class="sectlevel2">
-<li><a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary Zalando Headers</a></li>
+<li><a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a></li>
 <li><a href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Proprietary Headers</a></li>
 <li><a href="#233"><span class="must-keyword"><strong>Must</strong></span>: Support <code>X-Flow-ID</code></a></li>
 </ul>
 </li>
-<li><a href="#api-operation">20. API Operation</a>
+<li><a href="#api-operation">18. API Operation</a>
 <ul class="sectlevel2">
 <li><a href="#192"><span class="must-keyword"><strong>Must</strong></span>: Publish OpenAPI Specification</a></li>
 <li><a href="#193"><span class="should-keyword"><strong>Should</strong></span>: Monitor API Usage</a></li>
 </ul>
 </li>
-<li><a href="#events">21. Events</a>
+<li><a href="#events">19. Events</a>
 <ul class="sectlevel2">
 <li><a href="#194"><span class="must-keyword"><strong>Must</strong></span>: Treat Events as part of the service interface</a></li>
 <li><a href="#195"><span class="must-keyword"><strong>Must</strong></span>: Make Event schema available for review</a></li>
@@ -2986,10 +2978,10 @@ elapsed, the API must be moved to a state of requirement and be decommissioned.
 <h2 id="json-guidelines"><a class="link" href="#json-guidelines">8. JSON Guidelines</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These guidelines provides recommendations for defining JSON data at Zalando.
+<p>These guidelines provides recommendations for defining JSON data at InfoArmor.
 JSON here refers to <a href="https://tools.ietf.org/html/rfc7159">RFC 7159</a> (which updates <a href="https://tools.ietf.org/html/rfc4627">RFC 4627</a>),
 the "application/json" media type and custom JSON media types defined for APIs.
-The guidelines clarifies some specific cases to allow Zalando JSON data to have
+The guidelines clarifies some specific cases to allow InfoArmor JSON data to have
 an idiomatic form across teams and services.</p>
 </div>
 <div class="paragraph">
@@ -3284,9 +3276,6 @@ durations).</p>
 <p><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1-alpha2 country</a></p>
 </li>
 <li>
-<p>(It&#8217;s "GB", not "UK", even though "UK" has seen some use at Zalando)</p>
-</li>
-<li>
 <p><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1 language code</a></p>
 </li>
 <li>
@@ -3294,16 +3283,12 @@ durations).</p>
 for language variants</p>
 </li>
 <li>
-<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency codes</a></p>
+<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency codes</a>
+= API Naming</p>
 </li>
 </ul>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="api-naming"><a class="link" href="#api-naming">9. API Naming</a></h2>
-<div class="sectionbody">
 <div class="sect2">
 <h3 id="223"><a class="link" href="#223"><span class="must-keyword"><strong>Must</strong></span>/<span class="should-keyword"><strong>Should</strong></span>: Use Functional Naming Schema</a></h3>
 <div class="paragraph">
@@ -3312,7 +3297,7 @@ for language variants</p>
 helps to preserve uniqueness of names while giving readers meaningful context
 information about the addressed component. Besides, the most important aspect
 is, that it allows to keep APIs stable in the case of technical and
-organizational changes (Zalando for example maintains an internal naming convention).</p>
+organizational changes.</p>
 </div>
 <div class="paragraph">
 <p>To make use of this advantages for APIs with a larger <a href="#219">audience</a> we
@@ -3383,13 +3368,13 @@ resolution.</p>
 <div class="paragraph">
 <p>Hostnames in APIs must, respectively should conform to the functional naming
 depending on the <a href="#219">audience</a> as follows (see <a href="#223"><span class="must-keyword"><strong>Must</strong></span>/<span class="should-keyword"><strong>Should</strong></span>: Use Functional Naming Schema</a> for details and
-<code>&lt;functional-name&gt;</code> definition):</p>
+<code>&lt;functional-name&gt;</code> definition): <strong><em>needs refinining</em></strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="bnf">&lt;hostname&gt;             ::= &lt;functional-hostname&gt; | &lt;application-hostname&gt;
 
-&lt;functional-hostname&gt;  ::= &lt;functional-name&gt;.zalandoapis.com</code></pre>
+&lt;functional-hostname&gt;  ::= &lt;functional-name&gt;.infoarmorapis.com</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3398,7 +3383,7 @@ hostnames of <a href="#219">component-internal</a> APIs:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bnf">&lt;application-hostname&gt; ::= &lt;application-id&gt;.&lt;organization-unit&gt;.zalan.do
+<pre class="CodeRay highlight"><code data-lang="bnf">&lt;application-hostname&gt; ::= &lt;application-id&gt;.&lt;organization-unit&gt;.info.armor
 &lt;application-id&gt;       ::= [a-z][a-z0-9-]*  -- application identifier
 &lt;organization-id&gt;      ::= [a-z][a-z0-9-]*  -- organization unit identifier, e.g. team identifier</code></pre>
 </div>
@@ -3532,15 +3517,13 @@ direction, and the applied query filters to recreate the collection. See
 <li>
 <p><a id="limit"></a><a href="#limit"><code>limit</code></a>: client suggested limit to restrict the number of entries on
 a page. See <a href="#pagination">Pagination</a> section below.</p>
+<div id="resources" class="paragraph">
+<p>= Resources</p>
+</div>
 </li>
 </ul>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="resources"><a class="link" href="#resources">10. Resources</a></h2>
-<div class="sectionbody">
 <div class="sect2">
 <h3 id="138"><a class="link" href="#138"><span class="must-keyword"><strong>Must</strong></span>: Avoid Actions — Think About Resources</a></h3>
 <div class="paragraph">
@@ -3823,7 +3806,7 @@ than 2000 characters.)</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="http-requests"><a class="link" href="#http-requests">11. HTTP Requests</a></h2>
+<h2 id="http-requests"><a class="link" href="#http-requests">9. HTTP Requests</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="148"><a class="link" href="#148"><span class="must-keyword"><strong>Must</strong></span>: Use HTTP Methods Correctly</a></h3>
@@ -3887,7 +3870,7 @@ using header parameters. From a conceptual point of view, the semantic of an
 operation should always be expressed by the resource names, as well as the
 involved path and query parameters. In other words by everything that goes into
 the URL. Request headers are reserved for general context information (see
-<a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary Zalando Headers</a>). In addition, size limits on query parameters and headers are not
+<a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a>). In addition, size limits on query parameters and headers are not
 reliable and depend on clients, gateways, server, and actual settings. Thus,
 switching to headers does not solve the original problem.</p>
 </div>
@@ -4545,7 +4528,7 @@ also with company <em>Bar</em>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="http-status-codes-and-errors"><a class="link" href="#http-status-codes-and-errors">12. HTTP Status Codes And Errors</a></h2>
+<h2 id="http-status-codes-and-errors"><a class="link" href="#http-status-codes-and-errors">10. HTTP Status Codes And Errors</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="151"><a class="link" href="#151"><span class="must-keyword"><strong>Must</strong></span>: Specify Success and Error Responses</a></h3>
@@ -4566,7 +4549,7 @@ especially if they are not under control of the service provider. Thus unless
 a response code conveys application-specific functional semantics or is used
 in a none standard way that requires additional explanation, multiple error
 response specifications can be combined using the following pattern
-(see also <a href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a>):</p>
+(see also <a href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a>): <strong><em>need new example</em></strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -4577,7 +4560,7 @@ response specifications can be combined using the following pattern
     <span class="key">content</span>:
       <span class="key"><span class="delimiter">&quot;</span><span class="content">application/problem+json</span><span class="delimiter">&quot;</span></span>:
         <span class="key">schema</span>:
-          <span class="error">$ref</span>: <span class="error">'https://opensource.zalando.com/problem/schema.yaml#/Problem'</span></code></pre>
+          <span class="error">$ref</span>: <span class="error">'https://opensource.infoarmor.com/problem/schema.yaml#/Problem'</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4959,7 +4942,7 @@ by the client or the server (i.e. both for <a href="#client-side-error-codes" cl
 </div>
 <div class="paragraph">
 <p>The Open API schema definition of the Problem JSON object can be found
-<a href="https://zalando.github.io/problem/schema.yaml">on github</a>. You can
+<strong><em>to be defined</em></strong> <a href="https://infoarmor.github.io/problem/schema.yaml">on github</a>. You can
 reference it by using:</p>
 </div>
 <div class="listingblock">
@@ -4970,7 +4953,7 @@ reference it by using:</p>
     <span class="key">content</span>:
       <span class="key"><span class="delimiter">&quot;</span><span class="content">application/problem+json</span><span class="delimiter">&quot;</span></span>:
         <span class="key">schema</span>:
-          <span class="error">$ref</span>: <span class="error">'https://opensource.zalando.com/problem/schema.yaml#/Problem'</span></code></pre>
+          <span class="error">$ref</span>: <span class="error">'https://opensource.infoarmor.com/problem/schema.yaml#/Problem'</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4999,7 +4982,7 @@ receive and may disclose insights about vulnerabilities to attackers.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="performance"><a class="link" href="#performance">13. Performance</a></h2>
+<h2 id="performance"><a class="link" href="#performance">11. Performance</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="155"><a class="link" href="#155"><span class="should-keyword"><strong>Should</strong></span>: Reduce Bandwidth Needs and Improve Responsiveness</a></h3>
@@ -5008,8 +4991,7 @@ receive and may disclose insights about vulnerabilities to attackers.</p>
 This holds for APIs that (might) have high payloads and/or are used in
 high-traffic scenarios like the public Internet and telecommunication networks.
 Typical examples are APIs used by mobile web app clients with (often) less
-bandwidth connectivity. (Zalando is a 'Mobile First' company, so be mindful of
-this point.)</p>
+bandwidth connectivity.</p>
 </div>
 <div class="paragraph">
 <p>Common techniques include:</p>
@@ -5122,7 +5104,7 @@ object with only its <code>name</code> field.</p>
 <p>OpenAPI doesn&#8217;t support you in formally specifying different return object schemes
 depending on a parameter. When you define the field parameter, we recommend to provide
 the following description: <code>Endpoint supports filtering of return object fields as
-described in [Rule #157](<a href="https://opensource.zalando.com/restful-api-guidelines/#157" class="bare">https://opensource.zalando.com/restful-api-guidelines/#157</a>)</code></p>
+described in [Rule #157](<a href="https://allanon17.github.io/RestfulAPIGuideline/#157" class="bare">https://allanon17.github.io/RestfulAPIGuideline/#157</a>)</code></p>
 </div>
 <div class="paragraph">
 <p>The syntax of the query <code>field</code> value is defined by the following
@@ -5359,7 +5341,7 @@ proxy cache.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="pagination"><a class="link" href="#pagination">14. Pagination</a></h2>
+<h2 id="pagination"><a class="link" href="#pagination">12. Pagination</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="159"><a class="link" href="#159"><span class="must-keyword"><strong>Must</strong></span>: Support Pagination</a></h3>
@@ -5564,16 +5546,17 @@ details).</p>
 </div>
 <div class="paragraph">
 <p>The page content is transported via <a href="#items"><code>items</code></a>, while the <a href="#query"><code>query</code></a> object may
-contain the query filters applied to the collection resource as follows:</p>
+contain the query filters applied to the collection resource as follows:
+<strong><em>to be defined</em></strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="json">{
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.zalandoapis.com/resources?cursor=&lt;self-position&gt;</span><span class="delimiter">&quot;</span></span>,
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">first</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.zalandoapis.com/resources?cursor=&lt;first-position&gt;</span><span class="delimiter">&quot;</span></span>,
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">prev</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.zalandoapis.com/resources?cursor=&lt;previous-position&gt;</span><span class="delimiter">&quot;</span></span>,
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">next</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.zalandoapis.com/resources?cursor=&lt;next-position&gt;</span><span class="delimiter">&quot;</span></span>,
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">last</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.zalandoapis.com/resources?cursor=&lt;last-position&gt;</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">self</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.infoarmorapis.com/resources?cursor=&lt;self-position&gt;</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">first</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.infoarmorapis.com/resources?cursor=&lt;first-position&gt;</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">prev</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.infoarmorapis.com/resources?cursor=&lt;previous-position&gt;</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">next</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.infoarmorapis.com/resources?cursor=&lt;next-position&gt;</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">last</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://my-service.infoarmorapis.com/resources?cursor=&lt;last-position&gt;</span><span class="delimiter">&quot;</span></span>,
   <span class="key"><span class="delimiter">&quot;</span><span class="content">query</span><span class="delimiter">&quot;</span></span>: {
     <span class="key"><span class="delimiter">&quot;</span><span class="content">query-param-&lt;1&gt;</span><span class="delimiter">&quot;</span></span>: <span class="error">.</span><span class="error">.</span><span class="error">.</span>,
     <span class="key"><span class="delimiter">&quot;</span><span class="content">query-param-&lt;n&gt;</span><span class="delimiter">&quot;</span></span>: <span class="error">.</span><span class="error">.</span><span class="error">.</span>
@@ -5603,7 +5586,7 @@ the ability to support serving counts over the life of a service.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="hypermedia"><a class="link" href="#hypermedia">15. Hypermedia</a></h2>
+<h2 id="hypermedia"><a class="link" href="#hypermedia">13. Hypermedia</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="162"><a class="link" href="#162"><span class="must-keyword"><strong>Must</strong></span>: Use REST Maturity Level 2</a></h3>
@@ -5691,10 +5674,8 @@ target resources without 'discovering' them.</p>
 <div class="paragraph">
 <p>However, we do not forbid HATEOAS; you could use it, if you checked its
 limitations and still see clear value for your usage scenario that
-justifies its additional complexity. If you use HATEOAS please share
-experience and present your findings in the
-<a href="https://confluence.zalando.net/display/GUL/API+Guild">API Guild [internal
-link</a>].</p>
+justifies its additional complexity. If you use HATEO AS please share
+experience and present your findings API Guild <strong><em>to be defined</em></strong></p>
 </div>
 </div>
 <div class="sect2">
@@ -5817,7 +5798,7 @@ As a result, the use of the <a href="https://tools.ietf.org/html/rfc8288#section
 </div>
 </div>
 <div class="sect1">
-<h2 id="data-formats"><a class="link" href="#data-formats">16. Data Formats</a></h2>
+<h2 id="data-formats"><a class="link" href="#data-formats">14. Data Formats</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="167"><a class="link" href="#167"><span class="must-keyword"><strong>Must</strong></span>: Use JSON to Encode Structured Data</a></h3>
@@ -5851,10 +5832,7 @@ PDF, DOC, XML) may be made available through content negotiation.</p>
 <div class="sect2">
 <h3 id="172"><a class="link" href="#172"><span class="should-keyword"><strong>Should</strong></span>: Prefer standard Media type name <code>application/json</code></a></h3>
 <div class="paragraph">
-<p>Previously, this guideline allowed the use of custom media types like
-<code>application/x.zalando.article+json</code>. This usage is not recommended
-anymore and should be avoided, except where it is necessary for cases of
-<a href="#114">media type versioning</a>. Instead, just use the standard media type name
+<p>Use the standard media type name
 <code>application/json</code> (or <code>application/problem+json</code> for <a href="#176"><span class="must-keyword"><strong>Must</strong></span>: Use Problem JSON</a>).</p>
 </div>
 <div class="paragraph">
@@ -5951,7 +5929,7 @@ They are also <a href="https://tools.ietf.org/html/rfc6838#section-3.4">discoura
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>email</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://tools.ietf.org/html/rfc5322">RFC 5322</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"<a href="mailto:example@zalando.de">example@zalando.de</a>"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"<a href="mailto:example@InfoArmor.com">example@InfoArmor.com</a>"</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
@@ -5963,7 +5941,7 @@ They are also <a href="https://tools.ietf.org/html/rfc6838#section-3.4">discoura
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostname</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://tools.ietf.org/html/rfc1034">RFC 1034</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"www.zalando.de"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"www.inforarmor.com"</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
@@ -5981,19 +5959,19 @@ They are also <a href="https://tools.ietf.org/html/rfc6838#section-3.4">discoura
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#170"><code>iso-3166</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"DE"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"US"</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#173"><code>iso-4217</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"EUR"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"USD</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#170"><code>iso-639</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"de"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"en"</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
@@ -6023,7 +6001,7 @@ They are also <a href="https://tools.ietf.org/html/rfc6838#section-3.4">discoura
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>uri</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://tools.ietf.org/html/rfc3986">RFC 3986</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"https://www.zalando.de/"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"https://www.infoarmor.com/"</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>string</code></p></td>
@@ -6066,13 +6044,6 @@ codes:</p>
 <ul>
 <li>
 <p><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1-alpha2 country codes</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>(It is "GB", not "UK", even though "UK" has seen some use at Zalando)</p>
-</li>
-</ul>
-</div>
 </li>
 <li>
 <p><a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1 language code</a></p>
@@ -6179,7 +6150,7 @@ specific language types in Java will translate to <code>BigDecimal</code> for
 </div>
 </div>
 <div class="sect1">
-<h2 id="common-data-types"><a class="link" href="#common-data-types">17. Common Data Types</a></h2>
+<h2 id="common-data-types"><a class="link" href="#common-data-types">15. Common Data Types</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Definitions of data objects that are good candidates for wider usage:</p>
@@ -6221,7 +6192,7 @@ specific language types in Java will translate to <code>BigDecimal</code> for
 <pre class="CodeRay highlight"><code data-lang="yaml"><span class="key">SalesOrder</span>:
   <span class="key">properties</span>:
     <span class="key">grand_total</span>:
-      <span class="error">$ref</span>: <span class="error">'https://opensource.zalando.com/restful-api-guidelines/money.yaml#/Money'</span></code></pre>
+      <span class="error">$ref</span>: <span class="error">https://allanon17.github.io/RestfulAPIGuideline/money.yaml#/Money'</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6242,9 +6213,6 @@ specific language types in Java will translate to <code>BigDecimal</code> for
 <ul>
 <li>
 <p>Violates the <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskov Substitution Principle</a></p>
-</li>
-<li>
-<p>Breaks existing library support, e.g. <a href="https://github.com/zalando/jackson-datatype-money">Jackson Datatype Money</a></p>
 </li>
 <li>
 <p>Less flexible since both amounts are coupled together, e.g. mixed currencies are impossible</p>
@@ -6416,7 +6384,7 @@ may be used to carry the <a href="https://tools.ietf.org/html/rfc7232#section-2.
 </div>
 <div class="paragraph">
 <p>These properties are not always strictly necessary, but making them idiomatic
-allows API client developers to build up a common understanding of Zalando&#8217;s
+allows API client developers to build up a common understanding of InfoArmor&#8217;s
 resources. There is very little utility for API consumers in having different
 names or value types for these fields across APIs.</p>
 </div>
@@ -6623,7 +6591,7 @@ and address types when modeling users and their addresses).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="common-headers"><a class="link" href="#common-headers">18. Common Headers</a></h2>
+<h2 id="common-headers"><a class="link" href="#common-headers">16. Common Headers</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section describes a handful of headers, which we found raised the most
@@ -6944,7 +6912,7 @@ common header.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="proprietary-headers"><a class="link" href="#proprietary-headers">19. Proprietary Headers</a></h2>
+<h2 id="proprietary-headers"><a class="link" href="#proprietary-headers">17. Proprietary Headers</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section shares definitions of proprietary headers that should be
@@ -6955,9 +6923,9 @@ explicitly visible. Use the parameter definitions of the resource HTTP
 methods.</p>
 </div>
 <div class="sect2">
-<h3 id="183"><a class="link" href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary Zalando Headers</a></h3>
+<h3 id="183"><a class="link" href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a></h3>
 <div class="paragraph">
-<p>As a general rule, proprietary HTTP headers should be avoided. Still
+<p><strong><em>to be defined</em></strong> As a general rule, proprietary HTTP headers should be avoided. Still
 they can be useful in cases where context needs to be passed through
 multiple services in an end-to-end fashion. As such, a valid use-case
 for a proprietary header is providing context information, which is not
@@ -6987,7 +6955,7 @@ We aim for backward compatibility, and therefore keep the <code>X-</code> prefix
 <div class="paragraph">
 <p>The following proprietary headers have been specified by this guideline
 for usage so far. Remember that HTTP header field names are not
-case-sensitive.</p>
+case-sensitive. <strong><em>to be defined</em></strong></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -7015,9 +6983,9 @@ case-sensitive.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a id="x-tenant-id"></a><a href="#x-tenant-id"><code>X-Tenant-ID</code></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifies the tenant initiated the request
-to the multi tenant Zalando Platform. The <a href="#x-tenant-id"><code>X-Tenant-ID</code></a> must be set
+to the multi tenant InfoArmor Platform. The <a href="#x-tenant-id"><code>X-Tenant-ID</code></a> must be set
 according to the Business Partner ID extracted from the OAuth token when
-a request from a Business Partner hits the Zalando Platform.</p></td>
+a request from a Business Partner hits the InfoArmor Platform.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">9f8b3ca3-4be5-436c-a847-9cd55460c495</p></td>
 </tr>
 <tr>
@@ -7081,7 +7049,7 @@ hop-by-hop <code>X-RateLimit-</code> headers which can be used as defined in <a 
 <div class="sect2">
 <h3 id="184"><a class="link" href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Proprietary Headers</a></h3>
 <div class="paragraph">
-<p>All Zalando&#8217;s proprietary headers are end-to-end headers.
+<p><strong><em>to be defined</em></strong> All InfoArmor&#8217;s proprietary headers are end-to-end headers.
 <sup class="footnote" id="_footnote_header-types">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
 <div class="paragraph">
@@ -7197,7 +7165,7 @@ DB solutions).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="api-operation"><a class="link" href="#api-operation">20. API Operation</a></h2>
+<h2 id="api-operation"><a class="link" href="#api-operation">18. API Operation</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="192"><a class="link" href="#192"><span class="must-keyword"><strong>Must</strong></span>: Publish OpenAPI Specification</a></h3>
@@ -7209,19 +7177,16 @@ to profit from the API management infrastructure.</p>
 </div>
 <div class="paragraph">
 <p>An API is published by copying its <strong>OpenAPI specification</strong> into the reserved
-<strong>/zalando-apis</strong> directory of the <strong>deployment artifact</strong> used to deploy the
+<strong>/InfoArmor-apis</strong> directory of the <strong>deployment artifact</strong> used to deploy the
 provisioning service. The directory must only contain <strong>self-contained YAML</strong>
-<strong>files</strong> that each describe one API (exception see <a href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a>). We prefer this
-deployment artifact-based method over the past (now legacy)
-<code>.well-known/schema-discovery</code> service endpoint-based publishing process, that
-we only support for backward compatibility reasons.</p>
+<strong>files</strong> that each describe one API (exception see <a href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a>). <strong><em>to be defined</em></strong></p>
 </div>
 <div class="paragraph">
 <p>Background: In our dynamic and complex service infrastructure, it is important
 to provide API client developers a central place with online access to the API
 specifications of all running applications. As a part of the infrastructure,
 the API publishing process is used to detect API specifications. The findings
-are published in the API Portal - the universal hub for all Zalando APIs.</p>
+are published in the API Portal - <strong><em>to be defined</em></strong></p>
 </div>
 <div class="paragraph">
 <p><strong>Note:</strong> To publish an API, it is still necessary to deploy the artifact
@@ -7244,11 +7209,11 @@ of the client-id retrieved from the OAuth token.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="events"><a class="link" href="#events">21. Events</a></h2>
+<h2 id="events"><a class="link" href="#events">19. Events</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Zalando’s architecture centers around decoupled microservices and in
-that context we favour asynchronous event driven approaches. The
+<p><strong><em>needs refinining</em></strong> InfoArmor’s architecture centers around decoupled microservices and in
+that context we favor asynchronous event driven approaches. The
 guidelines in this section focus on how to design and publish events
 intended to be shared for others to consume.</p>
 </div>
@@ -7276,12 +7241,6 @@ that kind of event.</p>
 teams to use, typically in an <em>Event Type Registry</em>. Each event
 published can then be validated against the overall structure of its
 event type and the schema for its custom data.</p>
-</div>
-<div class="paragraph">
-<p>The basic model described above was originally developed in the
-<a href="https://github.com/zalando/nakadi">Nakadi project</a>, which acts as a
-reference implementation of the event type registry, and as a validating
-publish/subscribe broker for event producers and consumers.</p>
 </div>
 <div class="sect2">
 <h3 id="194"><a class="link" href="#194"><span class="must-keyword"><strong>Must</strong></span>: Treat Events as part of the service interface</a></h3>
@@ -7387,7 +7346,7 @@ events.</p>
 <div class="sect2">
 <h3 id="197"><a class="link" href="#197"><span class="must-keyword"><strong>Must</strong></span>: Ensure that Events are registered as Event Types</a></h3>
 <div class="paragraph">
-<p>In Zalando&#8217;s architecture, events are registered using a structure
+<p><strong><em>needs refinining</em></strong> In InfoArmor&#8217;s architecture, events are registered using a structure
 called an <em>Event Type</em>. The Event Type declares standard information as
 follows:</p>
 </div>
@@ -7524,7 +7483,7 @@ definition:</p>
         - <span class="string"><span class="content">external-public</span></span>
       <span class="key">description</span>: <span class="string"><span class="delimiter">|</span><span class="content">
         Intended target audience of the event type, analogue to audience definition for REST APIs
-        in rule #219 -- see https://opensource.zalando.com/restful-api-guidelines/#219</span></span>
+        in rule #219 -- see https://allanon17.github.io/RestfulAPIGuideline/</span></span>
     <span class="key">owning_application</span>:
       <span class="key">description</span>: <span class="string"><span class="delimiter">|</span><span class="content">
         Name of the application (eg, as would be used in infrastructure
@@ -8175,7 +8134,7 @@ events on the models created for the service’s REST API.</p>
 <p><a href="#general-guidelines">General Guidelines</a></p>
 </li>
 <li>
-<p><a href="#api-naming">API Naming</a></p>
+<p><a href="#api-naming">[api-naming]</a></p>
 </li>
 <li>
 <p><a href="#data-formats">Data Formats</a></p>
@@ -8560,7 +8519,8 @@ Using a tool mentioned here doesn&#8217;t automatically ensure you follow the gu
 <div class="sect2">
 <h3 id="api-first-integrations"><a class="link" href="#api-first-integrations">API First Integrations</a></h3>
 <div class="paragraph">
-<p>The following frameworks were specifically designed to support the API First workflow with OpenAPI YAML files (sorted alphabetically):</p>
+<p>The following frameworks were specifically designed to support the API First
+workflow with OpenAPI YAML files (sorted alphabetically): <strong><em>needs refinining</em></strong></p>
 </div>
 <div class="ulist">
 <ul>
@@ -8599,7 +8559,7 @@ plugin to help you easily edit Swagger specification files inside IntelliJ IDEA<
 <div class="sect2">
 <h3 id="support-libraries"><a class="link" href="#support-libraries">Support Libraries</a></h3>
 <div class="paragraph">
-<p>These utility libraries support you in implementing various parts of our RESTful API guidelines (sorted alphabetically):</p>
+<p><strong><em>needs refinining</em></strong> These utility libraries support you in implementing various parts of our RESTful API guidelines (sorted alphabetically):</p>
 </div>
 <div class="ulist">
 <ul>
