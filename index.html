@@ -1487,10 +1487,10 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#230"><span class="may-keyword"><strong>May</strong></span>: Consider to Support <code>Idempotency-Key</code> Header</a></li>
 </ul>
 </li>
-<li><a href="#proprietary-headers">17. Proprietary Headers</a>
+<li><a href="#Custom-headers">17. Custom Headers</a>
 <ul class="sectlevel2">
-<li><a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a></li>
-<li><a href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Proprietary Headers</a></li>
+<li><a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Custom InfoArmor Headers</a></li>
+<li><a href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Custom Headers</a></li>
 <li><a href="#233"><span class="must-keyword"><strong>Must</strong></span>: Support <code>X-Flow-ID</code></a></li>
 </ul>
 </li>
@@ -1532,12 +1532,21 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <li><a href="#dissertations">Dissertations</a></li>
 <li><a href="#books">Books</a></li>
 <li><a href="#blogs">Blogs</a></li>
+<li><a href="#Sites">Sites</a></li>
+</ul>
+</li>
+<li><a href="#appendix-tooling">Appendix B: Tooling</a>
+<ul class="sectlevel2">
 <li><a href="#api-first-integrations">API First Integrations</a></li>
 <li><a href="#support-libraries">Support Libraries</a></li>
+</ul>
+</li>
+<li><a href="#appendix-best-practices">Appendix C: Best Practices</a>
+<ul class="sectlevel2">
 <li><a href="#optimistic-locking">Optimistic Locking in RESTful APIs</a></li>
 </ul>
 </li>
-<li><a href="#appendix-changelog">Appendix B: Changelog</a>
+<li><a href="#appendix-changelog">Appendix D: Changelog</a>
 <ul class="sectlevel2">
 <li><a href="#rule-changes">Rule Changes</a></li>
 </ul>
@@ -1719,6 +1728,33 @@ API Design</a></p>
 <p>Fielding Dissertation:
 <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Architectural
 Styles and the Design of Network-Based Software Architectures</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>Sites:</em> A few excellent sites on all topics related to RESTful APIs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Site:
+<a href="https://apiacademy.co/">API Academy</a></p>
+</li>
+<li>
+<p>Site:
+<a href="http://apistylebook.com/">API StyleBook</a></p>
+</li>
+<li>
+<p>Site:
+<a href="https://apisyouwonthate.com/">APIs you won’t hate</a></p>
+</li>
+<li>
+<p>Site:
+<a href="https://nordicapis.com/">NordicAPI</a></p>
+</li>
+<li>
+<p>Site:
+<a href="https://www.programmableweb.com/">ProgrammableWeb</a></p>
 </li>
 </ul>
 </div>
@@ -2244,8 +2280,8 @@ API Audience narrative (internal link)</a>.</p>
 <div class="paragraph">
 <p>Every API endpoint needs to be secured using OAuth 2.0. Please refer to
 the
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#security-definitions-object">official
-OpenAPI spec</a> on how to specify security definitions in your API
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securityRequirementObject">official
+OpenAPI spec</a> on how to specify security requirements in your API
 specification or take a look at the following example.</p>
 </div>
 <div class="listingblock">
@@ -2345,7 +2381,7 @@ different owners, resource specific scopes may make sense.</p>
 <p>After permission names are defined and the permission is declared in the
 security definition at the top of an API specification, it should be assigned
 to each API operation by specifying a
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#securityRequirementObject">security
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#securityRequirementObject">security
 requirement</a> like this:</p>
 </div>
 <div class="listingblock">
@@ -3226,7 +3262,7 @@ example <code>2015-05-28T14:07:17Z</code></p>
 </div>
 <div class="paragraph">
 <p>Note that the
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types">OpenAPI
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#dataTypes">OpenAPI
 format</a> "date-time" corresponds to "date-time" in the RFC) and
 <code>2015-05-28</code> for a date (note that the OpenAPI format "date" corresponds
 to "full-date" in the RFC). Both are specific profiles, a subset of the
@@ -3434,7 +3470,7 @@ Original-Message-ID</code></pre>
 <p>See also: <a href="https://tools.ietf.org/html/rfc7230#page-22">HTTP Headers are case-insensitive (RFC 7230)</a>.</p>
 </div>
 <div class="paragraph">
-<p>See <a href="#common-headers">Common Headers</a> and <a href="#proprietary-headers">Proprietary Headers</a> sections for more guidance
+<p>See <a href="#common-headers">Common Headers</a> and <a href="#proprietary-headers">[proprietary-headers]</a> sections for more guidance
 on HTTP headers.</p>
 </div>
 </div>
@@ -3462,7 +3498,7 @@ you to maintain two different API specifications and provide
 <div class="paragraph">
 <p>We see API&#8217;s base path as a part of deployment variant configuration.
 Therefore, this information has to be declared in the
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#server-object">server object</a>.</p>
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#server-object">server object</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3866,7 +3902,7 @@ using header parameters. From a conceptual point of view, the semantic of an
 operation should always be expressed by the resource names, as well as the
 involved path and query parameters. In other words by everything that goes into
 the URL. Request headers are reserved for general context information (see
-<a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a>). In addition, size limits on query parameters and headers are not
+<a href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Custom InfoArmor Headers</a>). In addition, size limits on query parameters and headers are not
 reliable and depend on clients, gateways, server, and actual settings. Thus,
 switching to headers does not solve the original problem.</p>
 </div>
@@ -6900,7 +6936,7 @@ size.</p>
 <p><strong>Note:</strong> The <a href="#230"><code>Idempotency-Key</code></a> header unlike other headers in this section
 is not standardized in an RFC. Our only reference are the usage in the
 <a href="https://stripe.com/docs/api/idempotent_requests">Stripe API</a>. However, as it
-fit not into our section about <a href="#proprietary-headers">Proprietary Headers</a>, and we did not want
+fit not into our section about <a href="#proprietary-headers">[proprietary-headers]</a>, and we did not want
 to change the header name and semantic, we decided to treat it as any other
 common header.</p>
 </div>
@@ -6908,10 +6944,10 @@ common header.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="proprietary-headers"><a class="link" href="#proprietary-headers">17. Proprietary Headers</a></h2>
+<h2 id="Custom-headers"><a class="link" href="#Custom-headers">17. Custom Headers</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This section shares definitions of proprietary headers that should be
+<p>This section shares definitions of custom headers that should be
 named consistently because they address overarching service-related
 concerns. Whether services support these concerns or not is optional;
 therefore, the OpenAPI API specification is the right place to make this
@@ -6919,12 +6955,12 @@ explicitly visible. Use the parameter definitions of the resource HTTP
 methods.</p>
 </div>
 <div class="sect2">
-<h3 id="183"><a class="link" href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Proprietary InfoArmor Headers</a></h3>
+<h3 id="183"><a class="link" href="#183"><span class="must-keyword"><strong>Must</strong></span>: Use Only the Specified Custom InfoArmor Headers</a></h3>
 <div class="paragraph">
-<p><strong><em>to be defined</em></strong> As a general rule, proprietary HTTP headers should be avoided. Still
+<p><strong><em>to be defined</em></strong> As a general rule, custom HTTP headers should be avoided. Still
 they can be useful in cases where context needs to be passed through
 multiple services in an end-to-end fashion. As such, a valid use-case
-for a proprietary header is providing context information, which is not
+for a custom header is providing context information, which is not
 a part of the actual API, but is needed by subsequent communication.</p>
 </div>
 <div class="paragraph">
@@ -6949,7 +6985,7 @@ company specific header' names should incorporate the organization&#8217;s name.
 We aim for backward compatibility, and therefore keep the <code>X-</code> prefix.</p>
 </div>
 <div class="paragraph">
-<p>The following proprietary headers have been specified by this guideline
+<p>The following custom headers have been specified by this guideline
 for usage so far. Remember that HTTP header field names are not
 case-sensitive. <strong><em>to be defined</em></strong></p>
 </div>
@@ -7043,9 +7079,9 @@ hop-by-hop <code>X-RateLimit-</code> headers which can be used as defined in <a 
 </div>
 </div>
 <div class="sect2">
-<h3 id="184"><a class="link" href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Proprietary Headers</a></h3>
+<h3 id="184"><a class="link" href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Custom Headers</a></h3>
 <div class="paragraph">
-<p><strong><em>to be defined</em></strong> All InfoArmor&#8217;s proprietary headers are end-to-end headers.
+<p><strong><em>to be defined</em></strong> All InfoArmor&#8217;s custom headers are end-to-end headers.
 <sup class="footnote" id="_footnote_header-types">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
 <div class="paragraph">
@@ -7060,8 +7096,8 @@ the results of the queries (e.g. the device type information influences the
 recommendation results).</p>
 </div>
 <div class="paragraph">
-<p>Sometimes the value of a proprietary header will be used as part of the entity
-in a subsequent request. In such cases, the proprietary headers must still be
+<p>Sometimes the value of a custom header will be used as part of the entity
+in a subsequent request. In such cases, the custom headers must still be
 propagated as headers with the subsequent request, despite the duplication of
 information.</p>
 </div>
@@ -7087,7 +7123,7 @@ APIs or asynchronously via published events).</p>
 <div class="ulist">
 <ul>
 <li>
-<p>RESTful API requests via <a href="#x-flow-id"><code>X-Flow-ID</code></a> proprietary header (see <a href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Proprietary Headers</a>)</p>
+<p>RESTful API requests via <a href="#x-flow-id"><code>X-Flow-ID</code></a> custom header (see <a href="#184"><span class="must-keyword"><strong>Must</strong></span>: Propagate Custom Headers</a>)</p>
 </li>
 <li>
 <p>Published events via <code>flow_id</code> event field (see <a href="#event-metadata">metadata</a>)</p>
@@ -7264,11 +7300,11 @@ schemas. This is particularly useful for events that represent data changes
 about resources also used in other APIs.</p>
 </div>
 <div class="paragraph">
-<p>The <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#schemaObject">Open
+<p>The <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject">Open
 API Schema Object</a> is an <strong>extended subset</strong> of
-<a href="http://json-schema.org/">JSON Schema Draft 4</a>. For convenience,
+<a href="http://json-schema.org/">JSON Schema Specification Wright Draft 00</a>. For convenience,
 we highlight some important differences below. Please refer to the
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#schemaObject">Open
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#schemaObject">Open
 API Schema Object specification</a> for details.</p>
 </div>
 <div class="paragraph">
@@ -7294,12 +7330,6 @@ keywords, the following properties <strong>must not</strong> be used in event sc
 </li>
 <li>
 <p><code>const</code></p>
-</li>
-<li>
-<p><code>not</code></p>
-</li>
-<li>
-<p><code>oneOf</code></p>
 </li>
 </ul>
 </div>
@@ -7329,7 +7359,7 @@ considered redundant, but harmless.</p>
 </li>
 <li>
 <p><code>^x-</code>: patterned objects in the form of
-<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#vendorExtensions">vendor
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#specification-extensions">specification
 extensions</a> can be used in event type schema, but it might be the case
 that general purpose validators do not understand them to enforce a
 validation check, and fall back to must-ignore processing. A future
@@ -8498,15 +8528,41 @@ Architectures</a>:</strong> This is the text which defines what REST is.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong><a href="http://restful-api-design.readthedocs.org/en/latest/">Lessons-learned blog: Thoughts on RESTful API Design</a></strong>
-= Tooling</p>
+<p><strong><a href="http://restful-api-design.readthedocs.org/en/latest/">Lessons-learned blog: Thoughts on RESTful API Design</a></strong></p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="Sites"><a class="link" href="#Sites">Sites</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="https://apiacademy.co/">API Academy</a></strong></p>
+</li>
+<li>
+<p><strong><a href="http://apistylebook.com/">API StyleBook</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://apisyouwonthate.com/">APIs you won’t hate</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://nordicapis.com/">NordicAPI</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://www.programmableweb.com/">ProgrammableWeb</a></strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix-tooling"><a class="link" href="#appendix-tooling">Appendix B: Tooling</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This is not a part of the actual guidelines, but might be helpful for following them.
 Using a tool mentioned here doesn&#8217;t automatically ensure you follow the guidelines.</p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="api-first-integrations"><a class="link" href="#api-first-integrations">API First Integrations</a></h3>
@@ -8574,17 +8630,19 @@ call tracing and log correlation in distributed systems</p>
 <li>
 <p><strong><a href="https://github.com/zalando/twintip-spring-web">TWINTIP Spring Integration</a>:</strong>
 API discovery endpoint for Spring Web MVC</p>
-<div id="appendix-best-practices" class="paragraph">
-<p>= Best Practices</p>
-</div>
 </li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix-best-practices"><a class="link" href="#appendix-best-practices">Appendix C: Best Practices</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The best practices presented in this section are not part of the actual
 guidelines, but should provide guidance for common challenges we face when
 implementing RESTful APIs.</p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="optimistic-locking"><a class="link" href="#optimistic-locking">Optimistic Locking in RESTful APIs</a></h3>
@@ -8902,7 +8960,7 @@ not perfectly in sync, the locking could potentially fail</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="appendix-changelog"><a class="link" href="#appendix-changelog">Appendix B: Changelog</a></h2>
+<h2 id="appendix-changelog"><a class="link" href="#appendix-changelog">Appendix D: Changelog</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Non-major changes are editorial-only changes or minor changes of existing guidelines, e.g. adding new error code.
