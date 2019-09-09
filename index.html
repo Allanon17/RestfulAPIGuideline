@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="keywords" content="infoarmor, Guidelines, RESTful, API, Events, Schema">
 <meta name="copyright" content="CC-BY-SA 3.0">
-<title>Infoarmor RESTful API and Event Scheme Guidelines DRAFT</title>
+<title>InfoArmor RESTful API and Event Scheme Guidelines DRAFT</title>
 <style>
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
@@ -1298,20 +1298,20 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_infoarmor_restful_api_and_event_scheme_guidelines_draft"><a class="link" href="#_infoarmor_restful_api_and_event_scheme_guidelines_draft">Infoarmor RESTful API and Event Scheme Guidelines DRAFT</a></h2>
+<h2 id="_infoarmor_restful_api_and_event_scheme_guidelines_draft"><a class="link" href="#_infoarmor_restful_api_and_event_scheme_guidelines_draft">InfoArmor RESTful API and Event Scheme Guidelines DRAFT</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Infoarmor Archetecture C4E</p>
+<p>InfoArmor Architecture C4E</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="assets/api-infoarmor-small.jpg" alt="Archetectual C4E Logo">
+<img src="assets/api-infoarmor-small.jpg" alt="Architecture C4E Logo">
 </div>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_infoarmor_restful_api_and_event_scheme_guidelines_draft">Infoarmor RESTful API and Event Scheme Guidelines DRAFT</a></li>
+<li><a href="#_infoarmor_restful_api_and_event_scheme_guidelines_draft">InfoArmor RESTful API and Event Scheme Guidelines DRAFT</a></li>
 <li><a href="#introduction">1. Introduction</a>
 <ul class="sectlevel2">
 <li><a href="#conventions-used-in-these-guidelines">Conventions Used in These Guidelines</a></li>
@@ -1329,6 +1329,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <ul class="sectlevel2">
 <li><a href="#100"><span class="must-keyword"><strong>Must</strong></span>: Follow API First Principle</a></li>
 <li><a href="#101"><span class="must-keyword"><strong>Must</strong></span>: Provide API Specification using OpenAPI</a></li>
+<li><a href="#241"><span class="must-keyword"><strong>Must</strong></span>: Use SwaggerHub for ALL API Design</a></li>
 <li><a href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a></li>
 <li><a href="#102"><span class="should-keyword"><strong>Should</strong></span>: Provide API User Manual</a></li>
 <li><a href="#103"><span class="must-keyword"><strong>Must</strong></span>: Write APIs in U.S. English</a></li>
@@ -1769,30 +1770,113 @@ consumers. As a company we want to deliver products to our consumers which
 can be consumed like a service.</p>
 </div>
 <div class="paragraph">
-<p>Platform products provide their functionality via (<a href="https://nordicapis.com/how-to-treat-your-api-as-a-product/">Product</a>)
-APIs; hence, the design of our APIs should be based on the API as a Product
-principle:</p>
+<p>Platform products provide their functionality via <a href="https://nordicapis.com/how-to-treat-your-api-as-a-product/">Product</a>
+APIs; hence, the design of our APIs should be based on the API as a <a href="https://www.slideshare.net/nordicapis/what-do-you-mean-by-api-as-a-product-103433150">Product
+principle</a>:</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start with consumer in mind</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Treat your API as product and act like a product owner</p>
-</li>
-<li>
 <p>Put yourself into the place of your customers; be an advocate for
 their needs</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
-<p>Emphasize simplicity, comprehensibility, and usability of APIs to
-make them irresistible for client engineers</p>
-</li>
+<p>Leverage <strong>Design Thinking</strong></p>
+<div class="ulist">
+<ul>
 <li>
-<p>Actively improve and maintain API consistency over the long term</p>
-</li>
-<li>
-<p>Make use of customer feedback and provide service level support</p>
+<p>The design-thinking ideology asserts that a hands-on, <strong>user-centric</strong>
+approach to problem solving can lead to <strong>innovation</strong>, and innovation can
+lead to differentiation and a <strong>competitive advantage</strong></p>
 </li>
 </ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Managed like a product</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Funded annually based on the value derived</p>
+</li>
+<li>
+<p>Has an API Product Manager or Owner</p>
+</li>
+<li>
+<p>Multi-functional team</p>
+</li>
+<li>
+<p>DevOps Delivery</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Self-Service</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Low bar to access</p>
+</li>
+<li>
+<p>Easy to find</p>
+</li>
+<li>
+<p>Well documented</p>
+</li>
+<li>
+<p>Testable/TTFHW (Time-to-first Hello Work)</p>
+</li>
+<li>
+<p>Requisitionable</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Self-Evident</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Organization (taxonomy)</p>
+</li>
+<li>
+<p>Categorization (collected by usage patterns)</p>
+</li>
+<li>
+<p>Understandable vernacular</p>
+</li>
+<li>
+<p>Simple structure</p>
+</li>
+<li>
+<p>Common use or standards</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Support</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Provide service level support</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>Embracing 'API as a Product' facilitates a service ecosystem which can
@@ -1889,17 +1973,18 @@ starting with draft status and <em>early</em> team and peer review feedback.
 API may change and profit from implementation concerns and automated
 testing feedback. API evolution during development life cycle may
 include breaking changes for not yet productive features and as long as
-we have aligned the changes with the clients. Hence, API First does
-<em>not</em> mean that you must have 100% domain and requirement understanding
-and can never produce code before you have defined the complete API and
-get it confirmed by peer review. On the other hand, API First obviously
-is in conflict with the bad practice of publishing API definition and
-asking for peer review after the service integration or even the service
-productive operation has started. It is crucial to request and get early
-feedback — as early as possible, but not before the API changes are
-comprehensive with focus to the next evolution step and have a certain
-quality (including API Guideline compliance), already confirmed via team
-internal reviews.</p>
+we have aligned the changes with the clients.</p>
+</div>
+<div class="paragraph">
+<p>Hence, API First does <em>not</em> mean that you must have 100% domain and requirement
+understanding and can never produce code before you have defined the complete
+API and get it confirmed by peer review. On the other hand, API First obviously
+is in conflict with the bad practice of publishing API definition and asking
+for peer review after the service integration or even the service productive
+operation has started. It is crucial to request and get early feedback — as
+early as possible, but not before the API changes are comprehensive with focus
+to the next evolution step and have a certain quality (including API Guideline
+compliance), already confirmed via team internal reviews.</p>
 </div>
 </div>
 </div>
@@ -1923,13 +2008,36 @@ internal reviews.</p>
 </li>
 <li>
 <p>You must design your APIs consistently with this guidelines;
-use our <a href="https://zally.InfoArmor.net/">API Linter Service [internal link</a>] for automated rule checks.</p>
+use</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://app.swaggerhub.com/login?_ga=2.34644129.1487278583.1567968155-907502278.1563993824&amp;_gac=1.12329472.1565639851.EAIaIQobChMIirKwzo7-4wIVCr3ACh2Q-QQnEAAYASAAEgIWqPD_BwE">SwaggerHub</a> for automated rule checks.</p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/AllenV2/zally/src/master/">API Linter Service [internal link</a>] for automated rule checks.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>You must call for early review feedback from peers and client developers,
-and apply <a href="https://github.bus.zalan.do/ApiGuild/ApiReviewProcedure">our lightweight API
+and apply <a href="https://infoarmor.atlassian.net/wiki/spaces/AR/overview">our lightweight API
 review process [internal link</a>] for all component external APIs, i.e.
 all apis with <code>x-api-audience =/= component-internal</code> (see <a href="#219">API Audience</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong><em>More work required on this section</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Need to Validate Zally and SwaggerHub Functionality</p>
+</li>
+<li>
+<p>Need To Define Lightweight Review Process</p>
 </li>
 </ul>
 </div>
@@ -1955,40 +2063,63 @@ for the group via our API Portal.</p>
 <div class="paragraph">
 <p><strong>Hint:</strong> A good way to explore <strong>OpenAPI 3.0/2.0</strong> is to navigate through the
 <a href="https://openapi-map.apihandyman.io/">OpenAPI specification mind map</a> and use
-our <a href="https://plugins.jetbrains.com/search?search=swagger+Monte">Swagger Plugin
-for IntelliJ IDEA</a> to create your first API. To explore and validate/evaluate
-existing APIs the <a href="https://editor.swagger.io/">Swagger Editor</a> or our
-API Portal may be a good starting point.</p>
+our <a href="https://app.swaggerhub.com/login?_ga=2.34644129.1487278583.1567968155-907502278.1563993824&amp;_gac=1.12329472.1565639851.EAIaIQobChMIirKwzo7-4wIVCr3ACh2Q-QQnEAAYASAAEgIWqPD_BwE">SwaggerHub</a>
+implementation to create your first API. To explore and validate/evaluate
+existing APIs, <a href="https://app.swaggerhub.com/login?_ga=2.34644129.1487278583.1567968155-907502278.1563993824&amp;_gac=1.12329472.1565639851.EAIaIQobChMIirKwzo7-4wIVCr3ACh2Q-QQnEAAYASAAEgIWqPD_BwE">SwaggerHub</a>
+or our API Portal may be a good starting point.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>More work require on this section</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Need to determine if <a href="https://plugins.jetbrains.com/search?search=swagger+Monte">Swagger Plugin
+for IntelliJ IDEA</a>;</p>
+<div class="ulist">
+<ul>
+<li>
+<p>can be used</p>
+</li>
+<li>
+<p>can publish directly to SwaggerHub</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Need to implement portal</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="241"><a class="link" href="#241"><span class="must-keyword"><strong>Must</strong></span>: Use SwaggerHub for ALL API Design</a></h3>
+<div class="paragraph">
+<p>SwaggerHub is the primary platform supporting API First approach.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SwaggerHub MUST be used during API Design.</p>
+</li>
+<li>
+<p>Every API description MUST be stored in SwaggerHub under the InfoArmor team.</p>
+</li>
+<li>
+<p>SwaggerHub is the single source of truth to learn about existing APIs within the
+organization.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
 <h3 id="234"><a class="link" href="#234"><span class="must-keyword"><strong>Must</strong></span>: only use Durable and Immutable Remote References</a></h3>
 <div class="paragraph">
-<p>Normally, API specification files must be <strong>self-contained</strong>, i.e. files
-should not contain references to local or remote content, e.g. <code>../fragment.yaml#/element</code> or
-<code>$ref: 'https://github.com/InfoArmor/zally/blob/master/server/src/main/resources/api/zally-api.yaml#/schemas/LintingRequest'</code>.
-The reason is, that the content referred to is <em>in general</em> <strong>not durable</strong> and
-<strong>not immutable</strong>. As a consequence, the semantic of an API may change in
-unexpected ways.</p>
-</div>
-<div class="paragraph">
-<p>However, you may use remote references to resources accessible by the following
-service URLs.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code><a href="https://infrastructure-api-repository.InfoArmorapis.com/" class="bare">https://infrastructure-api-repository.InfoArmorapis.com/</a></code> (internal repository of APIs)</p>
-</li>
-<li>
-<p><code><a href="https://opensource.InfoArmor.com/problem/" class="bare">https://opensource.InfoArmor.com/problem/</a></code> (see <a href="#176"><span class="must-keyword"><strong>Must</strong></span>: Use Problem JSON</a>)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>As we control these URLs, we ensure that their content is <strong>durable</strong> and
-<strong>immutable</strong>. This allows to define API specifications by using fragments
-published via this sources, as suggested in <a href="#151"><span class="must-keyword"><strong>Must</strong></span>: Specify Success and Error Responses</a>.</p>
+<p>Normally, API specification files must be <strong>self-contained</strong>, i.e. files should
+not contain references to local or remote content. The reason is, that the
+content referred to is <em>in general</em> <strong>not durable</strong> and <strong>not immutable</strong>. As a
+consequence, the semantic of an API may change in unexpected ways.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2021,6 +2152,16 @@ sequence flows</p>
 platform service, GHE pages, or specific team web servers. Please do not forget
 to include a link to the API user manual into the API specification using the
 <code>#/externalDocs/url</code> property.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>More work require on this section</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Need to determine where user manuals will be published</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -9066,7 +9207,7 @@ header.prepend(nav);
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-09-06 18:23:50 UTC
+Last updated 2019-09-09 21:32:54 UTC
 </div>
 </div>
 <style>
