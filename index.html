@@ -1325,7 +1325,7 @@ a > code { background-color: #f0f0f0; padding: .1em .4em .1em .4em !important; f
 <ul class="sectlevel2">
 <li><a href="#100"><span class="must-keyword"><strong>Must</strong></span> Follow API First Principle</a></li>
 <li><a href="#101"><span class="must-keyword"><strong>Must</strong></span> Provide API Specification using OpenAPI</a></li>
-<li><a href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for ALL API Design</a></li>
+<li><a href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for storing API specifications</a></li>
 <li><a href="#234"><span class="must-keyword"><strong>Must</strong></span> only use Durable and Immutable Remote References</a></li>
 <li><a href="#102"><span class="must-keyword"><strong>Must</strong></span>/<span class="should-keyword"><strong>Should</strong></span>/<span class="may-keyword"><strong>May</strong></span>: Provide API User Manual</a></li>
 <li><a href="#103"><span class="must-keyword"><strong>Must</strong></span> Write APIs in U.S. English</a></li>
@@ -2037,21 +2037,22 @@ for IntelliJ IDEA</a>;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="241"><a class="link" href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for ALL API Design</a></h3>
+<h3 id="241"><a class="link" href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for storing API specifications</a></h3>
 <div class="paragraph">
 <p>SwaggerHub is the primary platform supporting API First approach. See <a href="#100"><span class="must-keyword"><strong>Must</strong></span> Follow API First Principle</a></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>SwaggerHub MUST be used during API Design.</p>
+<p>SwaggerHub MUST be used to collaborate with non-team members (internal/external)
+during API Design.</p>
 </li>
 <li>
 <p>Every API description MUST be stored in SwaggerHub under the InfoArmor team.</p>
 </li>
 <li>
-<p>SwaggerHub is the single source of truth to learn about existing APIs within the
-organization.</p>
+<p>SwaggerHub is the single source of truth for storing API specifications and
+associated versions within the organization.</p>
 </li>
 </ul>
 </div>
@@ -8706,7 +8707,7 @@ parsing Swagger Resource Declaration</p>
 SwaggerHub is an integrated API development platform that brings together all
 the core capabilities of the open source Swagger framework, along with
 additional advanced capabilities to build, document, manage, and deploy APIs.
-See <a href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for ALL API Design</a></p>
+See <a href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for storing API specifications</a></p>
 </li>
 </ul>
 </div>
@@ -9109,6 +9110,11 @@ regulatory demands</p>
 <div class="ulist">
 <ul>
 <li>
+<p><code>2019-08-24:</code> Changed <span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for ALL API Design to <span class="must-keyword"><strong>Must</strong></span> Use
+SwaggerHub for storing API specifications. This will provide developers with the
+options for creating an editing OpenAPI specs (<a href="#241"><span class="must-keyword"><strong>Must</strong></span> Use SwaggerHub for storing API specifications</a>).</p>
+</li>
+<li>
 <p><code>2019-08-24:</code> Improve guidance on caching (<a href="#149"><span class="must-keyword"><strong>Must</strong></span> Fulfill Common Method Properties</a>, <a href="#227"><span class="must-keyword"><strong>Must</strong></span> Document Cachable <code>GET</code>, <code>HEAD</code>, and <code>POST</code> Endpoints</a>).</p>
 </li>
 </ul>
@@ -9197,7 +9203,7 @@ header.prepend(nav);
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-09-11 21:14:34 UTC
+Last updated 2019-10-16 12:41:26 UTC
 </div>
 </div>
 <style>
